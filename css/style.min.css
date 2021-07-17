@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url(base.css);
+.header{width: 100%;height: 60px;background: #fff;position: fixed;top: 0;left: 0;z-index: 100;}
+.headercon{width: 100%;padding: 0 4%;box-sizing: border-box;}
+.headercon ul{margin: 0 auto;}
+.headercon ul li{float: left;line-height: 60px;margin-right: 60px;}
+.headercon ul li:last-child{margin-right: 0;}
+.headercon ul li a{display: block;font-size: 18px;color: #4395ff;
+transition:.35s;-moz-transition: .35s;-webkit-transition: .35s;-o-transition: .35s;}
+.banner{width: 100%;padding-top: 60px;box-sizing: border-box;overflow: hidden;position: relative;}
+.banner img{display: block;margin: 0 auto;}
+.bannertext{height: 65px;width: 100%;position: absolute;bottom: -80px;left: 0;background: rgba(0,0,0,0.5);line-height: 65px;
+transition:.5s;-moz-transition: .5s;-webkit-transition: .5s;-o-transition: .5s;opacity: 0;}
+.bannertext p{font-size: 20px;color: #fff;font-weight: 200;text-align: center;}
+.banner:hover .bannertext{bottom: 80px;opacity: 1;}
+.profile{width: 100%;padding: 60px 0;box-sizing: border-box;background: #f5f5f5;}
+.profilecon{width: 1200px;margin: 0 auto;}
+.profilecon h4{font-size: 30px;font-weight: 500;color: #333;text-align: center;margin-bottom: 40px;}
+.proimg{width: 200px;height: 200px;margin: 0 auto 30px;border-radius: 50%;}
+.proimg img{display: block;width: 100%;height: 100%;object-fit: cover;border-radius: 50%;}
+.protext{width: 100%;margin-bottom: 40px;}
+.protext h5{font-size: 30px;text-align: center;font-weight: 500;color: #4395ff;}
+.protext i{display: block;width: 240px;height: 2px;background: #4395ff;margin: 40px auto;}
+.protext h6{font-size: 36px;text-align: center;font-weight: 500;color: #4395ff;}
+.prolist{width: 800px;margin: 0 auto;}
+.prolist ul li{width: 100%;margin-bottom: 20px;}
+.prolist ul li:last-child{margin-bottom: 0;}
+.proimgleft{float: left;width: 30%;margin-right: 4%;border-radius: 8px;}
+.proimgleft img{display: block;width: 100%;border-radius: 8px;}
+.protexted{float: left;width: 66%;}
+.protexted h5{font-size: 18px;color: #0c55ff;font-weight: 600;margin-bottom: 15px;}
+.protexted p{font-size: 16px;color: #333;font-weight: 400;margin-bottom: 10px;}
+.protexted p:last-child{margin-bottom: 0;}
+.protexted p span{color: #0c55ff;}
+.protexted p a{color: #0c55ff;}
+.images{width: 100%;padding: 60px 0 40px 0;box-sizing: border-box;background: #fff;}
+.imagescon{width: 1200px;margin: 0 auto;}
+.imagescon h4{font-size: 30px;font-weight: 500;color: #333;text-align: center;margin-bottom: 40px;}
+.imagescon ul li{float: left;width: 23%;margin-right: 2.6%;margin-bottom: 2.6%;border-radius: 4px;overflow: hidden;}
+.imagescon ul li:nth-child(4n){margin-right: 0;}
+.imagescon ul li img{display: block;border-radius: 4px;transition:.5s;-moz-transition: .5s;-webkit-transition: .5s;-o-transition: .5s;}
+.imagescon ul li:hover img{-webkit-transform: scale(1.1);-moz-transform: scale(1.1);-o-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}
+.footer{width: 100%;height: 60px;background: #666;line-height: 60px;}
+.footer p{font-size: 16px;text-align: center;font-weight: 500;color: #fff;}
+@media screen and (max-width: 1210px) {
+	.profilecon,.imagescon{width: 100%;padding: 0 4%;box-sizing: border-box;}
+}
+@media screen and (max-width: 1024px) {
+	.imagescon ul li{width: 49%;margin-right: 2%;margin-bottom: 2%;}
+	.imagescon ul li:nth-child(4n){margin-right: 2%;}
+	.imagescon ul li:nth-child(2n){margin-right: 0%;}
+}
+@media screen and (max-width: 968px) {
+	.prolist{width: 90%;}
+	.protexted h5{margin-bottom: 6px;}
+	.protexted p{margin-bottom: 6px;}
+}
+@media screen and (max-width: 568px) {
+	.headercon ul li{margin-right: 40px;}
+	.banner{height: 220px;}
+	.banner img{display: block;width: 100%;height: 100%;object-fit: cover;}
+	.bannertext{height: 40px;line-height: 40px;bottom: 20px;opacity: 1;}
+	.bannertext p{font-size: 16px;}
+	.banner:hover .bannertext{bottom: 20px;opacity: 1;}
+	.profile{padding: 40px 0;}
+	.profilecon h4,.imagescon h4{font-size: 20px;margin-bottom: 20px;}
+	.protext{margin-bottom: 20px;}
+	.protext h5{font-size: 20px;}
+	.protext i{width: 180px;margin: 20px auto;}
+	.protext h6{font-size: 22px;}
+	.prolist{width: 100%;}
+	.proimgleft{display: block;float: none;width: 100%;margin-right: 0;margin-bottom: 15px;}
+	.protexted{float: none;width: 100%;}
+	.images{padding: 40px 0;}
+	.imagescon ul li{width: 100%;margin-right: 0%;margin-bottom: 2%;float: none;}
+}
